@@ -67,7 +67,7 @@ def remove_dollar_symbol_commas(input_str: str) -> float:
 
 
 
-def plot_histograms(df, col_filter, col_plot, categories, bins=75, figsize=(12, 15), sharex=False, sharey=False):
+def make_histograms_categories(df, col_filter, col_plot, categories, bins=75, figsize=(12, 15), sharex=False, sharey=False):
     
     """
     Plot Seaborn histograms in a grid for different categories.
@@ -103,7 +103,7 @@ def plot_histograms(df, col_filter, col_plot, categories, bins=75, figsize=(12, 
 
 
 
-def make_histograms(df: pd.DataFrame, figsize=(12, 15)):
+def make_histograms_cols(df: pd.DataFrame, figsize=(12, 15)):
     
     """
     Takes a dataframe and creates histograms for all the columns.
